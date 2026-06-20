@@ -14,22 +14,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e44b27ab-1c32-4d37-b77b-a3aa6457c077" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeFirst/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/CodeFirst-Poradnik.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/CodeFirst.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Configurations/SampleEntityConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Controllers/SampleEntityController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/DTOs/SampleEntityDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Data/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Entities/SampleEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Exceptions/NotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Services/DbService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/Services/IDbService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeFirst/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodeFirst/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodeFirst/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Configurations/RoomConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/Configurations/RoomConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Configurations/ServiceConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/Configurations/ServiceConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Controllers/GuestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/Controllers/GuestController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/DTOs/AddGuestDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/DTOs/AddGuestDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Entities/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/Entities/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Entities/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/Entities/Service.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Migrations/20260607125356_Init.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Migrations/20260607125356_Init.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Services/DbService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/Services/DbService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeFirst/Services/IDbService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeFirst/Services/IDbService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +35,7 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="c6dee0be-fd37-42a3-ba15-79b51ea70a7f" />
+        <option name="activeSessionId" value="3483a7e0-b041-4cf1-b0be-26f753822fbf" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
@@ -57,6 +53,14 @@
             <option name="modelValue" value="auto" />
             <option name="targetType" value="LOCAL" />
           </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="3483a7e0-b041-4cf1-b0be-26f753822fbf" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
         </option>
         <option name="type" value="PANEL" />
       </chat>
@@ -65,6 +69,7 @@
   <component name="CopilotPersistence">
     <persistenceIdMap>
       <entry key="_/Users/katarzyna.rak/PJATK/CodeFirst" value="3EOjoE2gY8UqNNW4elmFSBfNTjT" />
+      <entry key="_/Users/katarzyna.rak/PJATK/CodeFirst Kolos" value="3FMp4ujCy6uGG8iVNt1ZGBZRVss" />
     </persistenceIdMap>
   </component>
   <component name="CopilotUserSelectedModel">
@@ -75,22 +80,27 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="30" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/ComponentConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/ComponentManufacturerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/ComponentTypeConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/PCConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/DTOs/AddPCDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/DTOs/PCDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/DTOs/PCWithComponentsDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/DTOs/UpdatePCDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/BookingConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/BookingServiceConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/GuestConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/RoomConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Configurations/ServiceConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/DTOs/AddGuestDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/DTOs/GuestDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodeFirst/Data/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/Entities/ComponentManufacturer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/Entities/PC.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodeFirst/Entities/PCComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Entities/Booking.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Entities/BookingService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Entities/Guest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Entities/Room.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Entities/Service.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodeFirst/Exceptions/ConflictException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodeFirst/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodeFirst/Services/DbService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodeFirst/Services/IDbService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,61 +111,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3626721892485087" />
-      <entry key="MS500" value="3.496377524508018" />
-      <entry key="S2" value="6.236549982162213" />
-      <entry key="S5" value="7.216424901073377" />
-      <entry key="S10" value="7.594104631542506" />
-      <entry key="S30" value="8.5850023470887" />
-      <entry key="S60" value="13.444170478997206" />
-      <entry key="M2" value="23.704932324078325" />
-      <entry key="M5" value="38.31892617032851" />
-      <entry key="M10" value="46.65499976771654" />
-      <entry key="M15" value="50.50797726948076" />
-      <entry key="M30" value="55.59412338325238" />
-      <entry key="H1" value="60.1122201124405" />
-      <entry key="H2" value="73.82929914228642" />
-      <entry key="H4" value="113.70726062229589" />
-      <entry key="D1" value="397.4354743160932" />
-      <entry key="W1" value="575.6613172200374" />
+      <entry key="MS100" value="1.4677783914938782" />
+      <entry key="MS500" value="3.595138038198563" />
+      <entry key="S2" value="5.193241599374737" />
+      <entry key="S5" value="5.655645954330629" />
+      <entry key="S10" value="5.823973461846483" />
+      <entry key="S30" value="5.953534151573329" />
+      <entry key="S60" value="6.090401109213431" />
+      <entry key="M2" value="6.769026395603663" />
+      <entry key="M5" value="16.329136837122356" />
+      <entry key="M10" value="43.372899753207754" />
+      <entry key="M15" value="75.13374442346112" />
+      <entry key="M30" value="173.20357374819505" />
+      <entry key="H1" value="308.1152115285797" />
+      <entry key="H2" value="429.3953811682364" />
+      <entry key="H4" value="516.5490692607287" />
+      <entry key="D1" value="829.8724379779226" />
+      <entry key="W1" value="1151.741208105675" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.0365414054894403E-227" />
-      <entry key="S60" value="3.2216447929037282E-114" />
-      <entry key="M2" value="1.8738211273318476E-57" />
-      <entry key="M5" value="3.215109429764029E-23" />
-      <entry key="M10" value="1.4492548580277433E-11" />
-      <entry key="M15" value="1.4827447860158454E-7" />
-      <entry key="M30" value="0.001921037655377975" />
-      <entry key="H1" value="0.2383038558435822" />
-      <entry key="H2" value="2.7564971693364737" />
-      <entry key="H4" value="11.030006289261035" />
-      <entry key="D1" value="64.30063491656979" />
-      <entry key="W1" value="96.06627672366275" />
+      <entry key="MS100" value="0.0022435514746035833" />
+      <entry key="MS500" value="0.2952481653573826" />
+      <entry key="S2" value="0.7371346086455505" />
+      <entry key="S5" value="0.8851537645795451" />
+      <entry key="S10" value="0.9408261075137877" />
+      <entry key="S30" value="0.9798729907947581" />
+      <entry key="S60" value="0.9899203435419276" />
+      <entry key="M2" value="1.006639742282553" />
+      <entry key="M5" value="1.514729403498626" />
+      <entry key="M10" value="4.580961741585544" />
+      <entry key="M15" value="10.077613275153146" />
+      <entry key="M30" value="29.6552390139125" />
+      <entry key="H1" value="56.722805992256724" />
+      <entry key="H2" value="80.47582629689772" />
+      <entry key="H4" value="96.83325869949608" />
+      <entry key="D1" value="149.50519754106563" />
+      <entry key="W1" value="204.27728684258383" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3196552175225968" />
-      <entry key="MS500" value="3.4725982765320174" />
-      <entry key="S2" value="6.226792294175115" />
-      <entry key="S5" value="7.211993038879061" />
-      <entry key="S10" value="7.5917871564056165" />
-      <entry key="S30" value="8.584023423943288" />
-      <entry key="S60" value="13.443063048485037" />
-      <entry key="M2" value="23.70372177810368" />
-      <entry key="M5" value="38.31806037775425" />
-      <entry key="M10" value="46.65439467071678" />
-      <entry key="M15" value="50.507480119005194" />
-      <entry key="M30" value="55.59570249112857" />
-      <entry key="H1" value="60.350125112858386" />
-      <entry key="H2" value="76.58457257350518" />
-      <entry key="H4" value="124.73493960763533" />
-      <entry key="D1" value="461.73378563633986" />
-      <entry key="W1" value="671.7270954430228" />
+      <entry key="MS100" value="1.4037175426414694" />
+      <entry key="MS500" value="3.6280951982444107" />
+      <entry key="S2" value="5.734069008119049" />
+      <entry key="S5" value="6.441612826001081" />
+      <entry key="S10" value="6.711139686014882" />
+      <entry key="S30" value="6.91433001023055" />
+      <entry key="S60" value="7.069792710686676" />
+      <entry key="M2" value="7.769102009351128" />
+      <entry key="M5" value="17.836948878739708" />
+      <entry key="M10" value="47.939487653642004" />
+      <entry key="M15" value="85.1887602474854" />
+      <entry key="M30" value="202.82334610686362" />
+      <entry key="H1" value="364.80272641443776" />
+      <entry key="H2" value="509.84560714502425" />
+      <entry key="H4" value="613.3667242006504" />
+      <entry key="D1" value="979.3732493072945" />
+      <entry key="W1" value="1356.017586293842" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -166,6 +176,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3EOjoE2gY8UqNNW4elmFSBfNTjT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectSessionTemplates">
     <option name="inlineTemplate">
       <template>
@@ -264,6 +277,9 @@
       <workItem from="1780251959258" duration="208000" />
       <workItem from="1780252176406" duration="297000" />
       <workItem from="1780252485948" duration="9000" />
+      <workItem from="1780770212338" duration="9664000" />
+      <workItem from="1781716778220" duration="4494000" />
+      <workItem from="1781894609725" duration="4813000" />
     </task>
     <servers />
   </component>

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeFirst.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260607125356_Init")]
+    [Migration("20260617173713_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -186,7 +186,7 @@ namespace CodeFirst.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoomId"));
 
                     b.Property<double>("PricePerNight")
-                        .HasColumnType("double");
+                        .HasColumnType("float");
 
                     b.Property<int>("RoomNumber")
                         .HasColumnType("int");
@@ -204,6 +204,32 @@ namespace CodeFirst.Migrations
                     b.HasKey("RoomId");
 
                     b.ToTable("Rooms", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            RoomId = 1,
+                            PricePerNight = 100.0,
+                            RoomNumber = 101,
+                            Status = "Available",
+                            Type = "Single"
+                        },
+                        new
+                        {
+                            RoomId = 2,
+                            PricePerNight = 150.0,
+                            RoomNumber = 102,
+                            Status = "Occupied",
+                            Type = "Double"
+                        },
+                        new
+                        {
+                            RoomId = 3,
+                            PricePerNight = 300.0,
+                            RoomNumber = 103,
+                            Status = "Available",
+                            Type = "Suite"
+                        });
                 });
 
             modelBuilder.Entity("CodeFirst.Entities.Service", b =>
@@ -225,7 +251,7 @@ namespace CodeFirst.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<double>("Price")
-                        .HasColumnType("double");
+                        .HasColumnType("float");
 
                     b.HasKey("ServiceId");
 

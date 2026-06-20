@@ -37,7 +37,7 @@ namespace CodeFirst.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     RoomNumber = table.Column<int>(type: "int", nullable: false),
                     Type = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    PricePerNight = table.Column<double>(type: "double", nullable: false),
+                    PricePerNight = table.Column<double>(type: "float", nullable: false),
                     Status = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
@@ -52,7 +52,7 @@ namespace CodeFirst.Migrations
                     ServiceId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Price = table.Column<double>(type: "double", nullable: false),
+                    Price = table.Column<double>(type: "float", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
@@ -121,6 +121,16 @@ namespace CodeFirst.Migrations
                     { 1, "example@gmail.com", "John", "Doe", "" },
                     { 2, "xample@gmail.com", "Jane", "Smith", "" },
                     { 3, "xample@gmail.com", "Jane", "Doe", "" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Rooms",
+                columns: new[] { "RoomId", "PricePerNight", "RoomNumber", "Status", "Type" },
+                values: new object[,]
+                {
+                    { 1, 100.0, 101, "Available", "Single" },
+                    { 2, 150.0, 102, "Occupied", "Double" },
+                    { 3, 300.0, 103, "Available", "Suite" }
                 });
 
             migrationBuilder.InsertData(

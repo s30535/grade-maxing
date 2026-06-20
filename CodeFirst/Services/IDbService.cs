@@ -5,5 +5,5 @@ namespace CodeFirst.Services;
 public interface IDbService
 {
     Task<IEnumerable<GuestDTO>> GetAllAsync(string? LastName = null);                          // GET lista
-    Task<GuestDTO> AddAsync(AddGuestDTO dto);                    // POST
+    Task AddAsync(AddGuestDTO dto);                              // POST
 }

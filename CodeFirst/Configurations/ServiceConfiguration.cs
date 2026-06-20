@@ -11,7 +11,7 @@ public class ServiceConfiguration : IEntityTypeConfiguration<Service>
         builder.HasKey(s => s.ServiceId);
         builder.Property(s => s.ServiceId).HasColumnType("int");
         builder.Property(s => s.Name).HasMaxLength(100);
-        builder.Property(s => s.Price).HasColumnType("double");
+        builder.Property(s => s.Price).HasColumnType("float");
         builder.Property(s => s.Description).HasMaxLength(100);
 
        

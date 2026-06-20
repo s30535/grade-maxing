@@ -43,37 +43,31 @@ public class DbService : IDbService
     }
   
 
-    public async Task<GuestDTO> AddAsync(AddGuestDTO dto)
+    public async Task AddAsync(AddGuestDTO dto)
     {
-        var item = new AddGuestDTO()
+        var room = await _db.Rooms.FindAsync(dto.Booking.RoomId);
+        if (room == null) throw new NotFoundException();
+        if (dto.Booking.CheckIn >= dto.Booking.CheckOut) throw new ConflictException();
+
+        var guest = new Guest
         {
             FirstName = dto.FirstName,
             LastName = dto.LastName,
             Email = dto.Email,
             Phone = dto.Phone,
-            Booking = new AddBookingDTO()
-            {
-                GuestId = dto.Booking.GuestId,
-                RoomId = dto.Booking.RoomId,
-                CheckIn = dto.Booking.CheckIn,
-                CheckOut = dto.Booking.CheckOut,
-                Room = new RoomDTO()
+            Bookings =
+            [
+                new Booking
                 {
-                    RoomId = dto.Booking.Room.RoomId,
-                    RoomNumber = dto.Booking.Room.RoomNumber,
-                    Type = dto.Booking.Room.Type,
-                    PricePerNight = dto.Booking.Room.PricePerNight,
-                    Status = dto.Booking.Room.Status
+                    RoomId = dto.Booking.RoomId,
+                    CheckIn = dto.Booking.CheckIn,
+                    CheckOut = dto.Booking.CheckOut
                 }
-            }
-            
+            ]
         };
-        var room = item.Booking.Room;
-        if (room == null) throw new NotFoundException(); 
-        if (item.Booking.CheckIn < item.Booking.CheckOut) throw new ConflictException(); 
-        await _db.AddAsync(item);
+
+        await _db.Guests.AddAsync(guest);
         await _db.SaveChangesAsync();
-        return new GuestDTO() { FirstName = item.FirstName, LastName = item.LastName, Email = item.Email, Phone = item.Phone };
     }
 
 }

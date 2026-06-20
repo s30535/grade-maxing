@@ -19,8 +19,19 @@ public class GuestController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Add(AddGuestDTO dto)
     {
-        var created = await _db.AddAsync(dto);
-        return Created($"api/sampleentity/{created.GuestId}", created);
+        try
+        {
+            await _db.AddAsync(dto);
+            return Created();
+        }
+        catch (NotFoundException e)
+        {
+            return NotFound(e.Message);
+        }
+        catch (ConflictException e)
+        {
+            return Conflict(e.Message);
+        }
     }
 
 }
